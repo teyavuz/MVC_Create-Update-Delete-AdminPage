@@ -1,0 +1,139 @@
+﻿@model CaseStudyProject.Models.Entity.Users
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<section class="jumbotron text-center" style="background-color:white">
+    <div class="container">
+
+        <h4>Kullanıcı Detayları</h4>
+        <hr />
+        <div>
+            <dl class="dl-horizontal">
+                <dt>
+                    <span class="control-label col-md-2" style="font-weight:bold">Profil Fotoğrafı:</span>
+
+                </dt>
+
+                <dd>                    
+                    <img src="@Html.DisplayFor(model => model.ProfilePhoto)" style="width:150px; height:150px" />
+
+                </dd>
+
+                <dt>
+                    <span class="control-label col-md-2" style="font-weight:bold">İsim:</span>
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+
+                <dt>
+                    <span class="control-label col-md-2" style="font-weight:bold">Soyisim:</span>
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Surname)
+                </dd>
+
+                <dt>
+                    <span class="control-label col-md-2" style="font-weight:bold">Görev:</span>
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Mission)
+                </dd>
+
+                <dt>
+                    <span class="control-label col-md-2" style="font-weight:bold">Telefon:</span>
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Phone)
+                </dd>
+
+                <dt>
+                    <span class="control-label col-md-2" style="font-weight:bold">Mail:</span>
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Mail)
+                </dd>
+
+                <dt>
+                    <span class="control-label col-md-2" style="font-weight:bold">Adres:</span>
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Adress)
+                </dd>
+
+                <dt>
+                    <span class="control-label col-md-2" style="font-weight:bold">Hakkında:</span>
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.About)
+                </dd>
+
+                <dt>
+                    <span class="control-label col-md-2" style="font-weight:bold">Deneyim:</span>
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Experience)
+                </dd>
+
+                <dt>
+                    <span class="control-label col-md-2" style="font-weight:bold">Eğitim:</span>
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Studies)
+                </dd>
+
+                <dt>
+                    <span class="control-label col-md-2" style="font-weight:bold">Yetenekler:</span>
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Skills)
+                </dd>
+
+                <dt>
+                    <span class="control-label col-md-2" style="font-weight:bold">Referanslar:</span>
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Refs)
+                </dd>
+
+                <dt>
+                    <span class="control-label col-md-2" style="font-weight:bold">Hobiler:</span>
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Hobies)
+                </dd>
+
+                <dt>
+                    <span class="control-label col-md-2" style="font-weight:bold">Sertifikalar:</span>
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Certificiate)
+                </dd>
+
+            </dl>
+        </div>
+    </div>
+</section>
+
+
+
+<p>
+    @Html.ActionLink("Kullanıcı Listesine Dön", "Index")
+</p>

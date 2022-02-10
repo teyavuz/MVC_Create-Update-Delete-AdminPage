@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="jumbotron text-center" style="background-color:white">
+    <div class="container">
+        <main class="form-signin">
+            @using (Html.BeginForm("Login", "Security", FormMethod.Post))
+            {
+                <img class="mb-4" src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+                <h1 class="h3 mb-3 fw-normal">Lütfen Giriş Yap</h1>
+
+                <div class="">
+                    <label for="floatingInput">Email address</label>
+                    <input style="margin-left: auto; margin-right: auto;"  class="form-control" required="" name="Username">
+                </div>
+                <div class="">
+                    <label for="floatingPassword">Password</label>
+                    <input style="margin-left: auto; margin-right: auto;" type="password" class="form-control" required name="Password" >
+                </div>
+
+                <button class=" btn  btn-primary" type="submit">Giriş Yap</button>
+                <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
+            }
+           
+        </main>
+    </div>
+</section>

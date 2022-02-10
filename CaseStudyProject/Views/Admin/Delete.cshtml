@@ -1,0 +1,25 @@
+﻿@model CaseStudyProject.Models.Entity.Users
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="jumbotron text-center" style="background-color:white">
+    <div class="container">
+        <h2>SİLMEK İSTEDİĞİNE EMİN MİSİN?</h2>
+        <div>
+            <hr />
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="SİL!" class="btn btn-default" /> |
+                    @Html.ActionLink("Kullanıcı Listesine Dön", "Index")
+                </div>
+            }
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<section class="jumbotron text-center" style="background-color:white">
+    <div class="container">
+        <h1>Case Study</h1>
+        <img src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-registration/draw1.png" class="img-fluid" alt="Sample image">
+        <p>
+            <button type="button" onclick="location.href='@Url.Action("Create", "Users")'" class="btn btn-primary btn-lg">Kayıt Ol</button>
+            <button type="button" onclick="location.href='@Url.Action("Index","Admin")'" class="btn btn-info btn-lg">Admin Girişi</button>
+        </p>
+    </div>
+</section>
+
